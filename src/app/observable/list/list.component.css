@@ -1,0 +1,28 @@
+.row {
+  margin-top: 2rem;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list > li {
+  display: flex;
+  width: 15rem;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(116, 214, 35);
+}
+.list > li:hover {
+  background-color: aquamarine;
+}
+
+.list > li > a {
+  text-decoration: none;
+}
