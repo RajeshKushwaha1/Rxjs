@@ -1,7 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Includes/header/header.component';
 import { HeadComponent } from './Includes/head/head.component';
@@ -16,6 +15,16 @@ import { CustomComponent } from './observable/custom/custom.component';
 import { MapComponent } from './observable/map/map.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
+import { DebounceComponent } from './observable/debounce/debounce.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { Comp1Component } from './component/comp1/comp1.component';
+import { Comp2Component } from './component/comp2/comp2.component';
+import { Comp3Component } from './component/comp3/comp3.component';
+import { TapComponent } from './observable/tap/tap.component';
+import { TakeComponent } from './observable/take/take.component';
+import { RetryComponent } from './observable/retry/retry.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,8 +42,16 @@ import { FilterComponent } from './observable/filter/filter.component';
     MapComponent,
     PluckComponent,
     FilterComponent,
+    DebounceComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    TapComponent,
+    TakeComponent,
+    RetryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

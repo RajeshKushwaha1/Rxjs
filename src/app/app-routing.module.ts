@@ -1,3 +1,6 @@
+import { RetryComponent } from './observable/retry/retry.component';
+import { TapComponent } from './observable/tap/tap.component';
+import { SubjectComponent } from './observable/subject/subject.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
 import { MapComponent } from './observable/map/map.component';
 import { CustomComponent } from './observable/custom/custom.component';
@@ -11,6 +14,9 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { FilterComponent } from './observable/filter/filter.component';
+import { DebounceComponent } from './observable/debounce/debounce.component';
+import { TakeComponent } from './observable/take/take.component';
+import { TypeScriptComponent } from './type-script/type-script.component';
 
 const routes: Routes = [
   {
@@ -57,7 +63,34 @@ const routes: Routes = [
         path: 'filter',
         component: FilterComponent,
       },
+      {
+        path: 'tap',
+        component: TapComponent,
+      },
+      {
+        path: 'take',
+        component: TakeComponent,
+      },
+      {
+        path: 'retry',
+        component: RetryComponent,
+      },
+      {
+        path: 'debounce',
+        component: DebounceComponent,
+      },
+      {
+        path: 'subject',
+        component: SubjectComponent,
+      },
     ],
+  },
+  {
+    path: 'type-script',
+    loadChildren: () =>
+      import('./type-script/type-script.module').then(
+        (m) => m.TypeScriptModule
+      ),
   },
   {
     path: '**',
