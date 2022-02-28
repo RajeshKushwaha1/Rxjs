@@ -26,6 +26,9 @@ import { TakeComponent } from './observable/take/take.component';
 import { RetryComponent } from './observable/retry/retry.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { TypescriptModule } from './typescript/typescript.module';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     TapComponent,
     TakeComponent,
     RetryComponent,
+    HomeComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +63,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     HttpClientModule,
     RouterModule,
+    TypescriptModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

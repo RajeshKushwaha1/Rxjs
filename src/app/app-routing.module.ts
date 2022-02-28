@@ -16,8 +16,14 @@ import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
 import { TakeComponent } from './observable/take/take.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
   {
     path: 'promise',
     component: PromiseComponent,
@@ -85,8 +91,17 @@ const routes: Routes = [
     ],
   },
   {
+    path: 'type-script',
+    loadChildren: () =>
+      import('./typescript/typescript.module').then((m) => m.TypescriptModule),
+  },
+  // {
+  //   path: '*',
+  //   redirectTo: 'home',
+  // },
+  {
     path: '**',
-    redirectTo: 'promise',
+    component: PageNotFoundComponent,
   },
 ];
 
