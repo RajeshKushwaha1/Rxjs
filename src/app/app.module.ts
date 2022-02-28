@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -51,7 +52,13 @@ import { HttpClientModule } from '@angular/common/http';
     TakeComponent,
     RetryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    RouterModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

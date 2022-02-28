@@ -16,7 +16,6 @@ import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
 import { TakeComponent } from './observable/take/take.component';
-import { TypeScriptComponent } from './type-script/type-script.component';
 
 const routes: Routes = [
   {
@@ -86,20 +85,13 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'type-script',
-    loadChildren: () =>
-      import('./type-script/type-script.module').then(
-        (m) => m.TypeScriptModule
-      ),
-  },
-  {
     path: '**',
     redirectTo: 'promise',
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
