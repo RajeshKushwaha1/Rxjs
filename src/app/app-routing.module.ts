@@ -1,3 +1,5 @@
+import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
+import { ReplaySubjectComponent } from './observable/replay-subject/replay-subject.component';
 import { RetryComponent } from './observable/retry/retry.component';
 import { TapComponent } from './observable/tap/tap.component';
 import { SubjectComponent } from './observable/subject/subject.component';
@@ -18,6 +20,8 @@ import { DebounceComponent } from './observable/debounce/debounce.component';
 import { TakeComponent } from './observable/take/take.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ConcatComponent } from './observable/concat/concat.component';
+import { MergeComponent } from './observable/merge/merge.component';
 
 const routes: Routes = [
   {
@@ -87,6 +91,22 @@ const routes: Routes = [
       {
         path: 'subject',
         component: SubjectComponent,
+      },
+      {
+        path: 'replay-subject',
+        component: ReplaySubjectComponent,
+      },
+      {
+        path: 'async-subject',
+        component: AsyncSubjectComponent,
+      },
+      {
+        path: 'concat',
+        component: ConcatComponent,
+      },
+      {
+        path: 'merge',
+        component: MergeComponent,
       },
     ],
   },

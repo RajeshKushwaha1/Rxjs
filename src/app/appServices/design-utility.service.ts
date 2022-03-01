@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,6 +8,10 @@ export class DesignUtilityService {
   exclusive = new Subject<boolean>();
   // userName = new Subject<string>();
   userName = new BehaviorSubject<string>('Input Result here...');
+
+  videoEmit = new ReplaySubject<string>(2, 5000);
+
+  asyncVideoEmit = new AsyncSubject();
 
   constructor() {}
 

@@ -1,8 +1,48 @@
-<div class="form-control container my-5">
-  <label>name : </label>
-  <input type="text" #nameInput />
-</div>
+<div class="my-3 container">
+  <h2>DebounceTime & DistinctUntilChanged in Rxjs</h2>
+  <br />
 
-<div class="container">
-  <strong>{{ inputData }}</strong>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex - 01 <span class="text-primary">DebounceTime</span> </strong>
+      <div class="from-group row">
+        <label class="-sm-2 col-form-label col-form-label-lg">Name</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Search..."
+            #nameInput
+          />
+        </div>
+      </div>
+      <br />
+      <span
+        >Requested data :
+        <strong class="text-success">{{ inputData }}</strong></span
+      >
+    </div>
+
+    <div class="col-md-6">
+      <strong
+        >Ex - 02 <span class="text-primary">DistinctUntilChanged</span>
+      </strong>
+      <div class="from-group row">
+        <label class="-sm-2 col-form-label col-form-label-lg">Name</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Search..."
+            #nameInput2
+          />
+        </div>
+      </div>
+      <br />
+      <span
+        >Requested data :
+        <strong class="text-success">{{ inputData2 }}</strong></span
+      >
+    </div>
+  </div>
 </div>

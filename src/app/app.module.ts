@@ -29,6 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { TypescriptModule } from './typescript/typescript.module';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReplaySubjectComponent } from './observable/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
+import { ConcatComponent } from './observable/concat/concat.component';
+import { MergeComponent } from './observable/merge/merge.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +60,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RetryComponent,
     HomeComponent,
     PageNotFoundComponent,
+    ReplaySubjectComponent,
+    AsyncSubjectComponent,
+    ConcatComponent,
+    MergeComponent,
   ],
   imports: [
     BrowserModule,
