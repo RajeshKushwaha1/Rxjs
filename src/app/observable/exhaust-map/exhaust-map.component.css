@@ -1,0 +1,5 @@
+.video-list {
+  list-style: none;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}

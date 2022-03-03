@@ -1,0 +1,54 @@
+<div class="row container my-3">
+  <h2>Merge Map</h2>
+  <p>
+    <strong
+      >Maps each value to an Observable, then flattens all of these inner
+      Obsevable using <b>mergeAll</b></strong
+    >
+  </p>
+  <p>
+    <strong>Obsevable</strong> -> (subscribe =>(res)) --> (subscribe
+    =>(res.data))
+  </p>
+  <p>
+    <strong>Flattening operator</strong> -> Obsevable(wit flettening operator)
+    --> (subscribe =>(res.data))
+  </p>
+  <p><strong>map + mergeAll = mergeMap</strong></p>
+  <p><strong>mergeAll :</strong> Flattens an Obsevable-of-Obsevables</p>
+  <p>
+    <strong>Flattens means :</strong> Not subscribe again and again only one
+    time subscribe
+  </p>
+
+  <br />
+
+  <hr />
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex 01 | Map</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Videos : </strong> ['Tech','Comedy','News']
+      </p>
+      <ul id="elContainer"></ul>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex 02 | Map + mergeAll </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Videos : </strong> ['Tech','Comedy','News']
+      </p>
+      <ul id="elContainer2"></ul>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex 03 | mergeMap</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Videos : </strong> ['Tech','Comedy','News']
+      </p>
+      <ul id="elContainer3"></ul>
+    </div>
+  </div>
+</div>

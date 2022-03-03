@@ -1,0 +1,27 @@
+<div class="row container my-3">
+  <h2>Share Replay</h2>
+  <strong>avoid multiple http request</strong>
+
+  <div class="col-md-4">
+    <div class="row">
+      <div class="card my-2" *ngFor="let item of username | async">
+        <p><strong>City : </strong>{{ item.username }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="card my-2" *ngFor="let item of website | async">
+        <p><strong>website : </strong>{{ item.website }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="card my-2" *ngFor="let item of allProducts | async">
+        <p><strong>Name</strong> : {{ item.name }}</p>
+        <p><strong>City</strong> : {{ item.address.city }}</p>
+      </div>
+    </div>
+  </div>
+</div>

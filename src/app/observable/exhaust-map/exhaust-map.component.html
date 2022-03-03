@@ -1,0 +1,30 @@
+<div class="row container my-3">
+  <h2>ExhaustMap</h2>
+  <br />
+  <br />
+  <br />
+  <br />
+  <h4>Save Data</h4>
+  <hr />
+
+  <div class="row">
+    <div class="col-md-5 mr-auto">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <button class="btn btn-success" #btn>Save Data</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div *ngIf="fetching" class="text-center">
+        <div class="spinner-border text-warning">
+          <span class="sr-only"></span>
+        </div>
+        Saving...
+      </div>
+      <ul class="video-list">
+        <li><strong>Save Request : </strong>{{ saveRequest }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

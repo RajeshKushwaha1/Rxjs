@@ -1,3 +1,5 @@
+import { CombineLatestComponent } from './observable/combine-latest/combine-latest.component';
+import { ConcatMapComponent } from './observable/concat-map/concat-map.component';
 import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
 import { ReplaySubjectComponent } from './observable/replay-subject/replay-subject.component';
 import { RetryComponent } from './observable/retry/retry.component';
@@ -22,6 +24,11 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConcatComponent } from './observable/concat/concat.component';
 import { MergeComponent } from './observable/merge/merge.component';
+import { MergeMapComponent } from './observable/merge-map/merge-map.component';
+import { ConcatMap2Component } from './observable/concat-map2/concat-map2.component';
+import { ShareReplayComponent } from './observable/share-replay/share-replay.component';
+import { SwitchMapComponent } from './observable/switch-map/switch-map.component';
+import { ExhaustMapComponent } from './observable/exhaust-map/exhaust-map.component';
 
 const routes: Routes = [
   {
@@ -107,6 +114,34 @@ const routes: Routes = [
       {
         path: 'merge',
         component: MergeComponent,
+      },
+      {
+        path: 'merge-map',
+        component: MergeMapComponent,
+      },
+      {
+        path: 'concat-map',
+        component: ConcatMapComponent,
+      },
+      {
+        path: 'concat-map2',
+        component: ConcatMap2Component,
+      },
+      {
+        path: 'share-replay',
+        component: ShareReplayComponent,
+      },
+      {
+        path: 'combine-latest',
+        component: CombineLatestComponent,
+      },
+      {
+        path: 'switch-map',
+        component: SwitchMapComponent,
+      },
+      {
+        path: 'exhaust-map',
+        component: ExhaustMapComponent,
       },
     ],
   },
